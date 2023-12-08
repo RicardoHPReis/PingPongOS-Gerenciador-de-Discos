@@ -1,15 +1,15 @@
 # Nome do executável
-TARGET = pingpong
+TARGET = disco
 
 # Compilador
 CC = gcc
 
 # Opções de compilação
-CFLAGS = -O0
+CFLAGS = -O0 -lrt
 
 # Bibliotecas e arquivos fonte
 LIBS = libppos_static.a
-SRCS = ppos-core-aux.c pingpong-scheduler-srtf.c
+SRCS = ppos-core-aux.c ppos_disk.c pingpong-disco1.c
 
 # Objetos gerados a partir dos arquivos de origem
 OBJS = $(SRCS:.c=.o)

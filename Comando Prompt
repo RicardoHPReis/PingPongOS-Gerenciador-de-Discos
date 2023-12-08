@@ -4,7 +4,7 @@
     gcc --version (Para verificar se o GCC foi instalado)
 
 - Após isso, abra a pasta do trabalho no terminal e rode esse comando para rodar o trabalho. (No Replit, é preciso por -O0 no final)
-	gcc -o disco ppos-core-aux.c disk.c ppos_disk.c pingpong-disco1.c libppos_static.a -lrt -O0
+	gcc -o disco ppos-core-aux.c ppos_disk.c pingpong-disco1.c libppos_static.a -lrt -O0
 	./disco
 
 - Instalação do Git:

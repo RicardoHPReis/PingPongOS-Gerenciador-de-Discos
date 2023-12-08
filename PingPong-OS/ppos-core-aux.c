@@ -70,7 +70,7 @@ void verificaVariaveisGlobais()
 task_t *scheduler() {
 	task_t * proxima_tarefa = readyQueue;
 	task_t * aux = readyQueue; 
-  int shortest_time = task_get_ret(taskExec);
+	int shortest_time = task_get_ret(taskExec);
 	
   	if(readyQueue == NULL) 
 		return taskExec;
@@ -78,7 +78,7 @@ task_t *scheduler() {
 	{
 		do
 		{
-			if (aux->ret < shortest_time && aux != taskMain) {
+			if ((aux->ret < shortest_time && aux != taskMain) && aux != taskDisp) {
 				shortest_time = aux->ret;
 				proxima_tarefa = aux;
 			}

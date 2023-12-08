@@ -39,7 +39,7 @@
 #define DISK_DELAY_MIN   30		// atraso minimo, em milisegundos
 #define DISK_DELAY_MAX  300		// atraso maximo, em milisegundos
 
-//#define DEBUG_DISK 1			// para depurar a operação do disco
+#define DEBUG_DISK 1			// para depurar a operação do disco
 
 /**********************************************************************/
 
